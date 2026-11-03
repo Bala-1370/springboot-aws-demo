@@ -31,5 +31,5 @@ jobs:
         run: ./mvnw --batch-mode clean package -DskipTests
 
       - name: Build Docker image
-        run: docker build -t aws-demo:${{ github.sha }}
+        run: docker build -t aws-demo:${{ github.sha }} .
 
