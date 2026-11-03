@@ -25,7 +25,7 @@ jobs:
           cache: maven
 
       - name: Make Maven wrapper executable
-        run: chomd +x mvnw
+        run: chmod +x mvnw
 
       - name: Package Spring Boot application
         run: ./mvnw --batch-mode clean package -DskipTests
